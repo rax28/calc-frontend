@@ -10,7 +10,7 @@ function App() {
   const [result, setresult] = useState(0);
 
   const handleCalculation = async () => {
-    const res = await axios.post("http://localhost:3000/calculate", {
+    const res = await axios.post("https://calc-backend-keca.onrender.com/calculate", {
       num1: Number(a),
       num2: Number(b),
     });
